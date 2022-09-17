@@ -9,21 +9,50 @@ html {
 }
 
 .container {
-  max-width: 26rem;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f0f0f0;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
+form {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f8f7f7;
+  box-shadow: -15px 15px 15px silver;
 }
 
-.logo {
-  width: 10rem;
-  height: 10rem;
-  background-image: url(./img/rocket.svg);
-  background-size: contain;
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.form-field {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #5d8394;
+  border-radius: 5px;
+  color: white;
+  background-color: #5d8394;
+}
+
+.form-field::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.button--submit {
+  display: block;
+  margin: 20px auto 0 auto;
+  color: white;
+  background-color: #5d8394;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #5d8394;
 }
