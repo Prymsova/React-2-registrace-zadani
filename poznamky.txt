@@ -1,0 +1,17 @@
+k index.jsx v komponentě Registration
+
+//poznámky:
+//když jsem použila u buttonu onClick = { console.log(user) } >> tak se to vypisovalo rovnou a ne až při clicku, nutné uvést () => { ... }
+
+//nepoužito (původně u každého inputu):
+//onChange={ (event) => { setUser({ ...user, username: event.target.value}) } }
+
+//místo onChange přímo pro input použito onClick na button a pak získání hodnoty v inputu podle jehoID.value
+
+//když jsem změnu stavu pro user napojila až na onClick na button zároveň s console.log(user), tak se vypsal user ještě nevyplněný, až po druhém kliku byly údaje vyplněné
+//setUser({...user, username: username.value, email: email.value, password: password.value})
+
+//místo 
+//onBlur = { () => { setUser({...user, email: email.value}) } }
+//na každém inputu, tak onBlur s odkazem na společně volanou funkci handleBlur
+//setUser({...user, username: username.value, email: email.value, password: password.value, passwordConfrim: passwordConfirm.value})
